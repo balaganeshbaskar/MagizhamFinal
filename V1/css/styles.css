@@ -1,0 +1,204 @@
+Magizham Open Learning Community - Website Styling
+Authors : Balaji Bharatwaj Manikandan, Balaganesh Baskar
+*/
+/*Common styling*/
+body {
+	font-family: 'Nunito', sans-serif;
+}
+
+
+/*styling for the brand image starts here*/
+.brand-molc {
+	text-align: center;
+}
+
+
+
+@media screen and (min-width: 769px) {
+    .brand-molc-image {
+		width: 192px;
+		height: 100px;
+
+	}
+} 
+
+@media screen and (max-width: 768px) {
+    .brand-molc-image {
+		width: 96px;
+		height: 50px;
+	}
+}
+
+
+
+
+/*styling for the brand image ends here*/
+
+/*styling for navbar starts here*/
+@media screen and (min-width: 769px) {
+    .navbar-nav.navbar-center {
+		    position: absolute;
+		    left: 50%;
+		    transform: translatex(-50%);
+	}
+}
+@media screen and (max-width: 768px) {
+    .navbar-nav.navbar-center {
+		    border-radius: 5%;
+       		box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+        	padding: 20px;
+        	text-align: right;
+
+	}
+}
+/*----------------------------------------------------------------*/
+@media screen and (min-width: 769px) {
+    .nav-link-external-style {
+		font-weight: 700;
+		font-size: 20px;
+	}
+} 
+
+@media screen and (max-width: 768px) {
+    .nav-link-external-style {
+		font-weight: 700;
+		font-size: 16px;
+	}
+}
+
+/*----------------------------------------------------------------*/
+@media screen and (min-width: 767px) {
+    .navbar-brand {
+        padding: 20px;
+    }
+} 
+
+@media screen and (max-width: 767px) {
+    .navbar-brand {
+        padding: 5px;
+    }
+}
+
+/*styling for navbar ends here here */
+/*Styling for parallax image starts here*/
+.parallax {
+  /* The image used */
+  background-image: url("images/temp-image.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*styling for parallax image ends here*/
+
+/*----------------------------------------------------------------*/
+/*styling for about us starts herer*/
+
+.about-us {
+	margin: 10px;
+}
+
+@media screen and (min-width: 767px) {
+    .about-us {
+        padding: 30px;
+    }
+} 
+
+@media screen and (max-width: 767px) {
+    .about-us {
+        padding: 20px;
+    }
+}
+/*----------------------------------------------------------------*/
+
+.about-us-header {
+	text-align: center;
+	color: #b200e3;
+	position: relative;
+}
+ 
+.about-us-header::after {
+  content: "";
+  position: absolute;
+  border-top: 5px solid #b200e3;
+  border-radius: 5px;
+  left: 48%;
+  bottom: 0;
+  width: 4%;
+  height: 0px;
+}
+
+@media screen and (min-width: 769px) {
+    .about-us-header::after  {
+		left: 48%;
+	  bottom: 0;
+	  width: 4%;
+	  height: 0px;
+	}
+} 
+
+@media screen and (max-width: 768px) {
+    .about-us-header::after  {
+		left: 47%;
+	  bottom: 0;
+	  width: 7%;
+	  height: 0px;
+	}
+}
+
+@media screen and (min-width: 769px) {
+    .about-us-header {
+		font-weight: 700;
+		font-size: 40px;
+	}
+} 
+
+@media screen and (max-width: 768px) {
+    .about-us-header {
+		font-weight: 700;
+		font-size: 20px;
+	}
+}
+/*----------------------------------------------------------------*/
+
+.about-us-content {
+	
+}
+
+
+
+/*styling for about us ends here*/
+/*styling for contact starts here*/
+.contact-us {
+	margin: 10px;
+}
+
+@media screen and (min-width: 767px) {
+    .contact-us {
+        padding: 30px;
+    }
+} 
+
+@media screen and (max-width: 767px) {
+    .contact-us {
+        padding: 20px;
+    }
+}
+
+.contact-us-image {
+	width: 100%;
+	border-radius: 5%;
+	box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+	margin: 10px;
+}
+
+.contact-us-content {
+
+}
+
+/*styling for contact ends here*/
