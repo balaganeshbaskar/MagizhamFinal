@@ -109,7 +109,7 @@ Authors : Balaji Bharatwaj Manikandan, Balaganesh Baskar
 /*Styling for parallax image starts here*/
 .parallax {
   /* The image used */
-  background-image: url("images/temp-image.jpg");
+  background-image: url("images/parallax_1.jpg");
 
   /* Set a specific height */
   min-height: 500px;
@@ -199,28 +199,30 @@ Authors : Balaji Bharatwaj Manikandan, Balaganesh Baskar
 
 /*styling for quotes and explanations start here*/
 
-.quote-curriculum {
-  text-align: center;
-  font-weight: 700;
-  width: 75%;
-  padding: 20px;
-  position: relative;
-  left: 13%;
-}
-
 @media screen and (min-width: 767px) {
     .quote-curriculum {
         font-size: 25px;
         margin-top: 25px;
         line-height: 0.8;
+        text-align: center;
+        font-weight: 700;
+        width: 75%;
+        padding: 20px;
+        position: relative;
+        left: 13%;
     }
 } 
 
 @media screen and (max-width: 767px) {
     .quote-curriculum {
-        font-size: 18px;
+        font-size: 25px;
         margin-top: 20px;
         line-height: 1.1;
+        text-align: center;
+        font-weight: 700;
+        width: 100%;
+        padding: 20px;
+        position: relative;
     }
 }
 
@@ -278,6 +280,8 @@ Authors : Balaji Bharatwaj Manikandan, Balaganesh Baskar
     height: 455px;
     font-size: 20px;
     padding-top: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
   }
 
 } 
@@ -293,6 +297,9 @@ Authors : Balaji Bharatwaj Manikandan, Balaganesh Baskar
       color: white;
       font-size: 20px;
       padding-top: 15px;
+      padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
     }
 }
 
@@ -303,12 +310,6 @@ Authors : Balaji Bharatwaj Manikandan, Balaganesh Baskar
   margin: 10px;
 }
 
-.prefix-content-title 
-{
-  text-align: center;
-  color: #9b1495;
-  font-weight: 700;
-}
 
 .prefix-content-image {
   text-align: center;
@@ -323,12 +324,18 @@ Authors : Balaji Bharatwaj Manikandan, Balaganesh Baskar
 @media screen and (min-width: 767px) {
     .prefix-content-title {
         font-size: 30px;
+        text-align: center;
+        color: #9b1495;
+        font-weight: 700;
     }
 } 
 
 @media screen and (max-width: 767px) {
     .prefix-content-title {
-        font-size: 18px;
+        font-size: 25px;
+        text-align: center;
+        color: #9b1495;
+        font-weight: 700;
     }
 }
 
@@ -391,7 +398,7 @@ Authors : Balaji Bharatwaj Manikandan, Balaganesh Baskar
 
 @media screen and (max-width: 767px) {
     .learning-areas-title {
-        font-size: 20px;
+        font-size: 25px;
     }
 }
 /*styling for syllabus ends here*/
@@ -400,7 +407,7 @@ Authors : Balaji Bharatwaj Manikandan, Balaganesh Baskar
 .beauty-and-wellness {
   border: 2px solid #9b1495;
   border-radius: 10px;
-  padding: 20px 20px 20px 20px;
+  padding: 20px 20px 50px 20px;
   margin-top: 25px;
 }
 
@@ -462,16 +469,68 @@ Authors : Balaji Bharatwaj Manikandan, Balaganesh Baskar
     }
 } 
 
-@media screen and (max-width: 767px) {
-    .contact-us {
-        padding: 20px;
-    }
-}
-
-.contact-us-image {
-	width: 100%;
+.contact-us-image 
+{
 	border-radius: 5%;
 	box-shadow: 0 20px 30px rgba(0,0,0,0.5);
+
+  height: 250px; 
+  display: block; 
+  margin: auto;
+}
+
+
+.curriculum-us-image 
+{
+	border-radius: 5%;
+	box-shadow: 0 10px 15px rgba(0,0,0,0.5);
+
+  height: 320px; 
+  display: block; 
+  margin: auto;
+}
+
+
+@media screen and (max-width: 767px) 
+{
+
+  .curriculum-us-image 
+  {
+    border-radius: 5%;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.5);
+
+    height: 260px; 
+    display: block; 
+    margin: auto;
+  }
+
+  .contact-us 
+  {
+      padding: 20px;
+  }
+
+  .contact-us-image 
+  {
+    border-radius: 5%;
+    box-shadow: 0 20px 30px rgba(0,0,0,0.5);
+
+    height: 200px; 
+    display: block; 
+    margin: auto;
+  }
+}
+
+
+.contact-us-image-1
+{
+  /* height: 100px; */
+  padding: 0px;
+	border-radius: 5%;
+	box-shadow: 0 20px 30px rgba(0,0,0,0.5);
+
+  height: 250px; 
+  display: block; 
+  margin: auto;
 }
 
 .contact-us-content {
@@ -490,11 +549,25 @@ Authors : Balaji Bharatwaj Manikandan, Balaganesh Baskar
 	}
 } 
 
-@media screen and (max-width: 768px) {
-    .contact-us-content-heading{
-		font-weight: 700;
-		font-size: 16px;
-	}
+@media screen and (max-width: 768px)
+{
+    .contact-us-content-heading
+    {
+		  font-weight: 700;
+		  font-size: 16px;
+	  }
+
+    .contact-us-image-1
+    {
+      /* height: 100px; */
+      padding: 0px;
+      border-radius: 5%;
+      box-shadow: 0 20px 30px rgba(0,0,0,0.5);
+
+      height: 200px; 
+      display: block; 
+      margin: auto;
+    }
 }
 
 .contact-us-content {

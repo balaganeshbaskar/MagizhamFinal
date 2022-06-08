@@ -40,13 +40,86 @@ body {
   border-radius: 10px;
   /* box-shadow: 0 10px 12px rgba(0,0,0,0.2); */
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  padding: 30px;
+  padding: 10px;
   margin-top: 10px; 
   background: white;  /* fallback for old browsers */
   /* background-image: linear-gradient(to right,#9b1495, #382c98); */
   /* background-image: linear-gradient(to right,#e42ddc, #5748ca); */
   color: black;
   min-height: 100px;
+
+}
+
+.common_text
+{
+  font-size: 20px;
+}
+
+.card_custom_OLC {
+  border-radius: 10px;
+  /* box-shadow: 0 10px 12px rgba(0,0,0,0.2); */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 30px;
+  margin-top: 10px; 
+  background: white;  /* fallback for old browsers */
+  /* background-image: linear-gradient(to right,#9b1495, #382c98); */
+  /* background-image: linear-gradient(to right,#e42ddc, #5748ca); */
+  color: black;
+  margin-top: 80px;
+  height: 300px;
+
+}
+
+@media screen and (max-width: 768px) {
+
+  .common_text
+  {
+    font-size: 20px;
+  }
+
+  .card-custom {
+    border-radius: 10px;
+    /* box-shadow: 0 10px 12px rgba(0,0,0,0.2); */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 30px;
+    font-size: 20px;
+    margin-top: 10px; 
+    background: white;  /* fallback for old browsers */
+    /* background-image: linear-gradient(to right,#9b1495, #382c98); */
+    /* background-image: linear-gradient(to right,#e42ddc, #5748ca); */
+    color: black;
+    min-height: 100px;
+  
+  }
+
+  .card_custom_OLC {
+    border-radius: 10px;
+    /* box-shadow: 0 10px 12px rgba(0,0,0,0.2); */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 30px;
+    font-size: 20px;
+    margin-top: 10px; 
+    background: white;  /* fallback for old browsers */
+    /* background-image: linear-gradient(to right,#9b1495, #382c98); */
+    /* background-image: linear-gradient(to right,#e42ddc, #5748ca); */
+    color: black;
+    /* margin-top: 80px; */
+    height: 570px;
+  
+  }
+
+}
+
+.card_custom_features {
+  border-radius: 10px;
+  /* box-shadow: 0 10px 12px rgba(0,0,0,0.2); */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 10px 10px 0px 10px; 
+  background: white;  /* fallback for old browsers */
+  /* background-image: linear-gradient(to right,#9b1495, #382c98); */
+  /* background-image: linear-gradient(to right,#e42ddc, #5748ca); */
+  color: black;
+  height: 500px;
 
 }
 
@@ -100,11 +173,34 @@ body {
   /* background-image: linear-gradient(to right,#9b1495, #382c98); */
   color: black;
   min-height: 200px;
+  font-size: 20px;
   position: relative;
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   min-height: 100px;
+}
+
+@media screen and (max-width: 768px) 
+{
+  .card-custom-about-us-new
+  {
+    border-radius: 10px;
+    box-shadow: 0 10px 12px rgba(0,0,0,0.2);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 20px;
+    padding: 10px;
+    font-size: 20px;
+    background: #fff;  /* fallback for old browsers */
+    /* background-image: linear-gradient(to right,#9b1495, #382c98); */
+    color: black;
+    min-height: 200px;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    min-height: 100px;
+  }
 }
 
 .card-custom-small {
@@ -159,6 +255,7 @@ body {
 } 
 
 @media screen and (max-width: 768px) {
+
   .brand-molc-image {
   width: 96px;
   height: 50px;
@@ -240,8 +337,8 @@ body {
 }
 
 /*styling for navbar ends here here */
-/*Styling for parallax image starts here*/
-.parallax {
+.parallax 
+{
   /* The image used */
   background-image: url("images/temp-image.jpg");
 
@@ -254,7 +351,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-/*styling for parallax image ends here*/
 
 /*----------------------------------------------------------------*/
 /*styling for about us starts herer*/
@@ -457,6 +553,16 @@ body {
 
 }
 
+.about-us-border
+{
+  font-size: 40px;
+}
+
+.about-us-border-1
+{
+  font-size: 25px;
+}
+
 .about-us-border-header
 {
   font-size: 40px;
@@ -484,6 +590,17 @@ body {
 } 
 
 @media screen and (max-width: 768px) {
+
+  .about-us-border
+  {
+    font-size: 30px;
+  }
+
+  .about-us-border-1
+  {
+    font-size: 25px;
+  }
+
     .about-olc-content::after  {
     left: 47%;
     bottom: 0;
@@ -538,6 +655,7 @@ body {
 	margin: 10px;
 }
 
+
 .contact-us-content {
 	text-align: center;
 }
@@ -558,6 +676,7 @@ body {
     .contact-us-content-heading{
 		font-weight: 700;
 		font-size: 16px;
+    margin-top: 20px;
 	}
 }
 
@@ -765,6 +884,25 @@ body {
 }
 
 
+.why_magizham_images
+{
+	/* width: 95%; */
+	border-radius: 5%;
+	box-shadow: 0 20px 30px rgba(0,0,0,0.5);
+	margin: 10px;
+  height: 370px;
+  width: 600px;
+}
 
-
-/*styling for footer ends here
+@media (max-width:767px)
+{
+  .why_magizham_images
+  {
+    /* width: 95%; */
+    border-radius: 5%;
+    box-shadow: 0 20px 30px rgba(0,0,0,0.5);
+    margin: 10px;
+    height: 220px;
+    width: 95%;
+  }
+}

@@ -29,11 +29,10 @@
   </head>
   <body>
 
-
 		<!-- <a href="https://wa.me/919597989150?text=Enter%20Student%20Name%20Here%3A%0AEnter%20Parent%27s%20Name%3A%0AEnter%20Student%27s%20Grade%3A%0AEnter%20Contact%20Number%3A%0AEnter%20Email%20ID%20(optional)%3A	" class="float" target="_blank">
 			<i class="fa fa-whatsapp my-float"></i>
 		</a> -->
-		<a href="https://wa.me/919597989150?text=Hello!%0AI%20would%20like%20to%20know%20more%20about%20your%20school%2C%20Please%20contact%20me.%0AThank%20you!" class="float" target="_blank">
+		<a href="https://wa.me/919944563085?text=Hello!%0AI%20would%20like%20to%20know%20more%20about%20your%20school%2C%20Please%20contact%20me.%0AThank%20you!" class="float" target="_blank">
 			<i class="fa fa-whatsapp my-float"></i>
 		</a>
 
@@ -106,7 +105,7 @@
 	<!-- Navigation bar ends here -->
 
 	<!-- parallax image starts here -->
-	<div class="parallax" style="background-image: url('images/molc-new-images/parallax-image-02.jpg');"></div>
+	<div class="parallax" style="background-image: url('images/molc-new-images/parallax_1.jpg');"></div>
 	<!-- parallax image ends here -->
 
 	<!-- about MOLC starts here -->
@@ -123,7 +122,16 @@
 						<div class="about-us-content">
 							<!-- <p style="text-align: center" ><b>MAGIZHAM</b> is a dream project of <b><i>Ms. Neelaveni </i></b> and <b><i>Dr. Kamala </i></b></p> -->
 							<div class="card-custom">
-								<p>Established in 2014, Sai Murugan Social, Education and Charitable Trust is a registered non-governmental and non-profitable social service organization working with the sole objective of providing food, shelter, clothing, and rehabilitation to the poor and needy. SMSECT empowers women entrepreneurs and provides quality education to children through Magizham Open Learning Community (MOLC).</p>
+								<p>Established in 2014, Sai Murugan Social, Education and Charitable Trust (SMSECT) is a registered non-governmental and non-profitable social service organization working with the sole objective of providing food, shelter, clothing, and rehabilitation to the poor and needy. SMSECT empowers women entrepreneurs and provides quality education to children through Magizham.</p>
+								<p>
+									Magizham has the following units :
+								</p>
+								<ol>
+									<li>Magizham Montessori house  - K1(Pre KG) to K5(Grade 2)</li>
+									<li>Magizham open Learning Community- MOLC ( Grade 3 to Grade 10 under NIOS)</li>
+									<li>Magizham Smiling Stars (Magizham for children with special needs)</li>
+									<li>Swakruth -  Montessori  Teacher training</li>
+								</ol>
 							</div>
 						</div>
 					</div>
@@ -138,17 +146,17 @@
 			<div class = "col-lg-6 col-md-6 col-sm-12 col-xs-12 about-us-content">
 				<div class = "card-custom-about-us" style="text-align: center;">
 					<div class="vision-statement">
-						<p class="about-us-border">Our Vision</p>
+						<p class="about-us-border-1">Our Vision</p>
 					</div>					
-					<p>To promote learning and sustainable development of all students.</p>
+					<p class="common_text">To promote learning and sustainable development of all students.</p>
 				</div>
 			</div>
 			<div class = "col-lg-6 col-md-6 col-sm-12 col-xs-12 about-us-content">				
 				<div class = "card-custom-about-us" style="text-align: center;">
 					<div class="vision-statement">
-						<p class="about-us-border">Our Mission</p>
+						<p class="about-us-border-1">Our Mission</p>
 					</div>
-					<p>We foster multiple ways of learning and enhancement of skill that are highly adaptable to the global standard of education.</p>
+					<p class="common_text">We foster multiple ways of learning and enhancement of skill that are highly adaptable to the global standard of education.</p>
 				</div>
 			</div>
 		</div>
@@ -171,7 +179,7 @@
 				<div class="about-us-content">
 					<!-- <p style="text-align: center" ><b>MAGIZHAM</b> is a dream project of <b><i>Ms. Neelaveni </i></b> and <b><i>Dr. Kamala </i></b></p> -->
 					<div class="card-custom">
-						<p><span style = "font-weight : 700;">Ms. Neelaveni</span> holding Masters in English, is the Head of Magizham Open Learning Community. She holds a Bachelors in Special Education (LD) and Bachelors in Library Science. With her 25 years of experience as an educator,she desires to help students gain adequate knowledge to establish them in this 21st century. Being a bibliophile she has also worked as a librarian for 2 years. From being appointed as Guide Captain at her middle school days and earning Rajya Puraskar Governor Award from Madam M.Fathima Beevi, to being assigned as the Trainer Commissioner of Hosur educational district, her on going journey as a member of Bharat Scouts and Guides is highly remarkable. The Asia Book of Records chose her as one of the most Inspiring Women Entrepreneur. Despite of helping out people for almost three decades, her willingness to serve people never stopped. </p>
+						<p><span style = "font-weight : 700;">Ms. Neelaveni</span> Ms. Neelaveni, is the Head of Magizham Open Learning Community. She holds Masters in English, a Bachelors in Special Education (LD) and Bachelors in Library Science. With her 25 years of experience as an educator,she desires to help students gain adequate knowledge to establish them in this 21st century. Being a bibliophile she has also worked as a librarian for 2 years. From being appointed as Guide Captain at her middle school days and earning Rajya Puraskar Governor Award from Madam M.Fathima Beevi, to being assigned as the Trainer Commissioner of Hosur educational district, her on going journey as a member of Bharat Scouts and Guides is highly remarkable. The Asia Book of Records chose her as one of the most Inspiring Women Entrepreneur. Despite of helping out people for almost three decades, her willingness to serve people never stopped. </p>
 					</div>
 				</div>
 				<br>
@@ -198,7 +206,7 @@
 
 	
 	<!-- parallax image starts here -->
-	<div class="parallax" style="background-image: url('images/molc-new-images/parallax-image-03.jpg');"></div>
+	<div class="parallax" style="background-image: url('images/molc-new-images/parallax_2.jpg');"></div>
 	<!-- parallax image ends here -->
 
 	<!-- about OLC starts here -->
@@ -208,7 +216,7 @@
 						<div class="row">
 							<div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">				
 								<div class="about-us-header">
-									<p class="about-us-border">About Open Learning Community</p>
+									<p class="about-us-border">What is Open Learning Community?</p>
 								</div>		
 							</div>							
 						</div>
@@ -216,13 +224,13 @@
 						<div class="row">
 							<div class="col-xs-12 col-sm-12 col-lg-6 col-md-6">
 								<div>		
-									<img src="images/molc-new-images/parallax-image-08.jpg" class="contact-us-image">		
+									<img src="images/molc-new-images/about_olc.jpg" class="contact-us-image">		
 								</div>
 							</div>	
 							<div class="col-xs-12 col-sm-12 col-lg-6 col-md-6">
 								<div class="about-us-content">
-									<div class="card-custom">
-										<p>Open learning community is one of the forms of Alternative education. Alternative education encompasses many pedagogical approaches differing from mainstream pedagogy. In modern times, at least in some localities, the legal right to provide educational alternatives has become established alongside a duty to provide education for school age children. In an open learning community, Learner -  responsible model is emphasized. The approach caters to the interests and learning style of an individual. Children and teachers work together to share knowledge and skills.</p>
+									<div class="card_custom_OLC">
+										<p>Open learning community is one of the forms of Alternative education. Alternative education encompasses many pedagogical approaches differing from mainstream pedagogy. In an open learning community, Learner -  responsible model is emphasized. The approach caters to the interests and learning style of an individual. Children and teachers work together to share knowledge and skills.</p>
 									</div>
 								</div>							
 							</div>						
@@ -239,27 +247,27 @@
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-lg-12 col-md-12">					
 					<div class="about-us-header">
-						<p class="about-us-border">Why choose Magizham</p>
+						<p class="about-us-border">Magizham</p>
 					</div>
 				</div>
 			</div>
 			<div class="about-us"></div>
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-lg-12 col-md-12">
-					<div class="about-us-content card-custom" style="text-align: center;">
-						<p>Magizham Open Learning Community had a humble beginning in 2014 with 10 pre primary children in Hosur. We progressed to a Montessori school in 2017 and started MOLC (Alternative Education) in 2020. Since then MOLC family is growing steadily with a strong team of teachers and enthusiastic children.</p>
+					<div class="card-custom about-us-content" style="text-align: center;">
+						<p>Sai Murugan Educational Trust had a humble beginning in 2014 with 10 pre primary children in Hosur. We progressed to a Montessori school in 2017 and started MOLC (Alternative Education) in 2020. Since then MOLC family is growing steadily with a strong team of teachers and enthusiastic children.</p>
 					</div>					
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-lg-6 col-sm-12 col-md-6 col-xs-12">
 					<div style="position: relative; top: 50%;-ms-transform: translateY(-50%); transform: translateY(-50%); margin-top: 20px;  margin-bottom: 20px;">		
-						<img src="images/molc-new-images/parallax-image-04.jpg" class="contact-us-image">									
+						<img src="images/molc-new-images/why_magizham_1.jpg" class="contact-us-image">									
 					</div>		
 				</div>
 				<div class="col-lg-6 col-sm-12 col-md-6 col-xs-12">
 					<div style="position: relative; top: 50%;-ms-transform: translateY(-50%); transform: translateY(-50%); margin-top: 20px; margin-bottom: 20px;">		
-					<img src="images/molc-new-images/parallax-image-10.jpg" class="contact-us-image">			
+					<img src="images/molc-new-images/why_magizham_2.jpg" style="height: 350px;" class="contact-us-image">			
 					</div>					
 				</div>
 			</div>			
@@ -269,7 +277,7 @@
 	<!-- Why choose Magizham ends here -->
 
 	<!-- parallax image starts here -->
-	<div class="parallax" style="background-image: url('images/molc-new-images/parallax-image-06.jpg');"></div>
+	<div class="parallax" style="background-image: url('images/molc-new-images/parallax_3.jpg');"></div>
 	<!-- parallax image ends here -->
 
 	<!-- special features of MOLC starts here -->
@@ -288,23 +296,22 @@
 						<div class="row">
 							<div class="col-xs-12 col-sm-12 col-lg-6 col-md-6">
 								<div style="position: relative; top: 50%;-ms-transform: translateY(-50%); transform: translateY(-50%);">		
-								<img src="images/molc-new-images/parallax-image-07.jpg" class="contact-us-image">									
+								<img src="images/molc-new-images/features_molc.jpg" class="contact-us-image">									
 								</div>
 							</div>	
-							<div class="col-xs-12 col-sm-12 col-lg-6 col-md-6">
-								<div class="about-us-content" style="color: black; padding: 15px; position: relative; top: 50%;-ms-transform: translateY(-50%); transform: translateY(-50%);">
+								<div class="col-xs-12 col-sm-12 col-lg-6 col-md-6">
+								<div class="card-custom about-us-content">
 									<p>
 										<ul>
-											<!-- <li>Trained and Experienced Teachers</li> -->
-											<li>Montessori education (pre- primary) & NIOS Syllabus for class 1 onwards</li>
+											<li>Trained and Experienced Teachers</li>
+											<li>Montessori education (pre-primary to grade 20 & NIOS Syllabus from class 3 onwards</li>
 											<li>Student Responsible Learning Model</li>
 											<li>Guidance to children based on their interests and Learning style</li>
 											<li>Focus on enhancing the Social Quotient (SQ),Emotional Quotient (EQ) and life skills (LS)</li>
 											<li>Freedom to choose and learn from a wide range of vocational subjects</li>
-											<!-- <li>Curriculum and teaching to match the stages of child development</li> -->
+											<li>Curriculum and teaching to match the stages of child development</li>
 											<li>Focus on 21st century skills – 4Cs, IMT & FLIPS</li>
-											<li>IEP – Individualised Education Plan to engage with each student</li>
-											<!-- <li>The gap between the current state of learning and what is required is bridged through IEP – Individualised Education Plan</li> -->
+											<li>The gap between the current state of learning and what is required is bridged through IEP – Individualised Education Plan</li>
 										</ul>
 									</p>
 								</div>								
@@ -342,7 +349,7 @@
 							<div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12 about-us-content">
 								<div class = "card-custom-about-us-new" style="text-align: center;">
 									<div class="vision-statement-new">
-										<p class="about-us-border">Nowsafa Afrin, Mother of Hafsa Haseena & Hafisa Aimen </p>
+										<p class="">Nowsafa Afrin, Mother of Hafsa Haseena & Hafisa Aimen </p>
 									</div>					
 									<p>We like the way Magizham Open Learning Community guides and molds our children. My daughters are very much interested in learning everything here</p>
 								</div>
@@ -354,7 +361,7 @@
 							<div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12 about-us-content">
 								<div class = "card-custom-about-us-new" style="text-align: center;">
 									<div class="vision-statement-new">
-										<p class="about-us-border">Bharani's mother</p>
+										<p class="">Bharani's mother</p>
 									</div>					
 									<p>It was the biggest change in his education. To know one and to express one's talents freely we consider it the best educational institution. We are very excited to admit our son in Magizham. We will continue to travel on this educational journey happily. Thank you.</p>
 								</div>
@@ -366,7 +373,7 @@
 							<div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12 about-us-content">
 								<div class = "card-custom-about-us-new" style="text-align: center;">
 									<div class="vision-statement-new">
-										<p class="about-us-border">Mrs Punita , Mother of Bhargavi and Sangamithra</p>
+										<p class="">Mrs Punita , Mother of Bhargavi and Sangamithra</p>
 									</div>					
 									<p> I am happy to say that Barghavi and Sangamithra have changed a lot after joining Magizham. Now I see  Bhargavi has became more responsible in her work. I will be happy if Sangamithra's handwriting is corrected. She also needs extra care and guidance from teachers. Thank you for your support.</p>
 								</div>
@@ -378,7 +385,7 @@
 							<div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12 about-us-content">
 								<div class = "card-custom-about-us-new" style="text-align: center;">
 									<div class="vision-statement-new">
-										<p class="about-us-border">Bala and Rushi Mother</p>
+										<p class="">Bala and Rushi Mother</p>
 									</div>					
 									<p> I feel happy in admitting her sons in Magizham. My son Bala was not interested in going to the school where he studied previously. But he is eager to come to Magizham. Now days, he does his works without taking any support from us and become independent. His handwriting is improved. Rishi is happy and he is singing songs and chanting Slokas at home. Thank you</p>
 								</div>
@@ -390,7 +397,7 @@
 							<div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12 about-us-content">
 								<div class = "card-custom-about-us-new" style="text-align: center;">
 									<div class="vision-statement-new">
-										<p class="about-us-border">Mother of Mokshamithra and Madhav Aditya.</p>
+										<p class="">Mother of Mokshamithra and Madhav Aditya.</p>
 									</div>					
 									<p> After joining Magizham, Moksha does  homework without our support and follow-up. She is interested to come to Magizham even on holidays. Madhav is very good in activities. Thank you</p>
 								</div>
@@ -412,7 +419,9 @@
 			</div>
 			<div class="row top-margin">
 				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">	
-				<img src="images/molc-new-images/parallax-image-08.jpg" class="contact-us-image">
+				<a href="http://maps.google.com/?q=12.742259068675, 77.82479774389253" target="_blank">
+					<img src="images/map.jpg" class="contact-us-image">
+				</a>
 				</div>
 				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 					<div class="contact-us-content">

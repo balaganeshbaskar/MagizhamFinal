@@ -24,20 +24,7 @@ function set_deadline_open_modal(s_id)
                     document.getElementById("dl_actual_grade").value = data.t_grade;
                     document.getElementById("dl_actual_subject").value = data.t_subject;
 
-                    if(data.t_grade != "All") // WHAT TF ABOUT SUBJECT?
-                    {
-                        document.getElementById("dl_grade_input").value = data.t_grade;
-                        // document.getElementById("dl_subject_input").value = data.t_subject;
-
-                        document.getElementsByName("dl_grade_input")[0].hidden = false;
-                        document.getElementsByName("dl_grade_select")[0].hidden = true;
-
-                        // document.getElementsByName("dl_subject_input")[0].hidden = false;
-                        // document.getElementsByName("dl_subject_select")[0].hidden = true;
-
-                        
-                    }
-                    else
+                    if(data.t_grade == "All") 
                     {
                         document.getElementsByName("dl_grade_input")[0].hidden = true;
                         document.getElementsByName("dl_grade_select")[0].hidden = false;
@@ -47,12 +34,54 @@ function set_deadline_open_modal(s_id)
 
                         document.getElementById("dl_grade_select").readOnly = false;
                         // document.getElementById("dl_subject").readOnly = false;
+
+                    }
+                    else
+                    {
+
+                        document.getElementById("dl_grade_input").value = data.t_grade;
+                        // document.getElementById("dl_subject_input").value = data.t_subject;
+
+                        document.getElementsByName("dl_grade_input")[0].hidden = false;
+                        document.getElementsByName("dl_grade_select")[0].hidden = true;
+
+                        // document.getElementsByName("dl_subject_input")[0].hidden = false;
+                        // document.getElementsByName("dl_subject_select")[0].hidden = true;
+
                     }
 
-                    if(data.t_subject != "All") // WHAT TF ABOUT SUBJECT?
+                    // name="dl_subject_select_skills" id="dl_subject_skills"
+
+                    if(data.t_subject == "All") 
                     {
+                            
+                        // document.getElementsByName("dl_grade_input")[0].hidden = true;
+                        // document.getElementsByName("dl_grade_select")[0].hidden = false;
+
+                        document.getElementsByName("dl_subject_input")[0].hidden = true;
+                        document.getElementsByName("dl_subject_select")[0].hidden = false;
+                        document.getElementsByName("dl_subject_select_skills")[0].hidden = true;
+
+                        // document.getElementById("dl_grade").readOnly = false;
+                        document.getElementById("dl_subject").readOnly = false;
+                        
+                    }
+                    else if(data.t_subject == "Life Skills") 
+                    {
+                        document.getElementsByName("dl_subject_input")[0].hidden = true;
+                        document.getElementsByName("dl_subject_select")[0].hidden = true;
+                        document.getElementsByName("dl_subject_select_skills")[0].hidden = false;
+
+                        // document.getElementById("dl_grade").readOnly = false;
+                        document.getElementById("dl_subject_skills").readOnly = false;
+
+                    }
+                    else
+                    {
+
                         // document.getElementById("dl_grade_input").value = data.t_grade;
                         document.getElementById("dl_subject_input").value = data.t_subject;
+                        document.getElementsByName("dl_subject_select_skills")[0].hidden = true;
 
                         // document.getElementsByName("dl_grade_input")[0].hidden = false;
                         // document.getElementsByName("dl_grade_select")[0].hidden = true;
@@ -60,18 +89,6 @@ function set_deadline_open_modal(s_id)
                         document.getElementsByName("dl_subject_input")[0].hidden = false;
                         document.getElementsByName("dl_subject_select")[0].hidden = true;
 
-                        
-                    }
-                    else
-                    {
-                        // document.getElementsByName("dl_grade_input")[0].hidden = true;
-                        // document.getElementsByName("dl_grade_select")[0].hidden = false;
-
-                        document.getElementsByName("dl_subject_input")[0].hidden = true;
-                        document.getElementsByName("dl_subject_select")[0].hidden = false;
-
-                        // document.getElementById("dl_grade").readOnly = false;
-                        document.getElementById("dl_subject").readOnly = false;
                     }
                     
                     // document.getElementById("dl_staff_name").value = data.t_id;
@@ -693,7 +710,7 @@ function searchfun() // Filter function for all tab_name
     {
         if(n.value.length > 0)
         {	
-            td = tr[i].getElementsByTagName("td")[0];
+            td = tr[i].getElementsByTagName("td")[1];
             if(td)
             {
                 txtValue = td.textContent || td.innerText;
@@ -711,7 +728,7 @@ function searchfun() // Filter function for all tab_name
 
         if(r.value.length > 0)
         {
-            td = tr[i].getElementsByTagName("td")[1];
+            td = tr[i].getElementsByTagName("td")[2];
             if(td)
             {
                 txtValue = td.textContent || td.innerText;
@@ -728,7 +745,7 @@ function searchfun() // Filter function for all tab_name
 
         if(a.value.length > 0)
         {
-            td = tr[i].getElementsByTagName("td")[4];
+            td = tr[i].getElementsByTagName("td")[5];
             if(td)
             {
                 txtValue = td.textContent || td.innerText;

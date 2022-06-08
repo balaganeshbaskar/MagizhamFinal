@@ -51,6 +51,8 @@
 	$roll_no = '';
 	$attendance = 0;
 
+	$attempts = 3;
+
 	$gaurdian = '';
 	$gname = '';
 	$gnum = '';
@@ -276,7 +278,7 @@
 
 			$hash = password_hash($pass, PASSWORD_DEFAULT);
 
-			$credcheck = $mysqli->query("INSERT INTO credentials (uname, pass, type, s_id) VALUES ('$uname', '$hash', 'student', '$s_id')");
+			$credcheck = $mysqli->query("INSERT INTO credentials (uname, pass, type, s_id, attempts) VALUES ('$uname', '$hash', 'student', '$s_id', '$attempts')");
 
 			echo "<br>"."Parent: ".$parentcheck."<br>";
 			echo "Personal: ".$personalcheck."<br>";

@@ -158,25 +158,28 @@
 		<hr style="width: 100%; margin-top: 20px; margin-bottom: 20px; border-top: 2px solid black;">
 		
 		<?php if(isset($_SESSION['message'])): ?>
-				<div style="margin-top: 20px" class="alert alert-<?=$_SESSION['msg_type']?>">
+			<div style="margin-top: 20px" class="alert alert-<?=$_SESSION['msg_type']?>">
 
-					<?php 
-						echo $_SESSION['message'];
-						unset($_SESSION['message']);	
-					?>
-					
-				</div>
-			<?php endif; ?>	
+				<?php 
+					echo $_SESSION['message'];
+					unset($_SESSION['message']);	
+				?>
+				
+			</div>
+		<?php endif; ?>	
 
 		<!-- Filter Feature -->
 		<div class="row" style="height: 60px; border: 2px solid #E8E8E8; border-radius: 5px; padding-top: 10px;">
 			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-				<div class="row"> 
+				<div class="row">
 					<div class="col-lg-1 col-md-1 col-sm-12 col-xs-12">
 						<!-- <input type="checkbox" id="selectall" style="margin-top: 8px; height: 18px; width: 18px;" value="" onchange="selectall(this)"> -->
-					</div>	
-					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					</div>	 
+					<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
 						<button id="deadline_btn" type="button" onclick="set_deadline_open_modal('<?php echo $_SESSION['MEMBER_ID']; ?>')" class="btn btn-warning">Deadline</button>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+						<button id="promote_btn" type="button" onclick="" class="btn btn-info">Promote</button>
 					</div>
 					<!-- <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
 						<button id="annualapp" type="button" class="btn btn-warning annualapp" disabled>Annual Appraisal</button>
@@ -184,7 +187,7 @@
 					<!-- <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
 						<button id="promote" type="button" class="btn btn-warning promote" disabled>Promote</button>
 					</div> -->
-					<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+					<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
 
 					</div>
 					<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
@@ -268,10 +271,11 @@
 											<select class="form-select" onchange="dl_list(this.value, 'grade')" aria-label="Default select" name="dl_grade_select" id="dl_grade_select" required="true" hidden="true">
 												<option selected>Select Grade</option>
 												<option disabled>-----------------------------------------</option>
-												<option value="LKG">LKG</option>
-												<option value="UKG">UKG</option>
-												<option value="I">I</option>
-												<option value="II">II</option>
+												<option value="PREKG">K1 (Pre-KG)</option>
+												<option value="LKG">K2 (LKG)</option>
+												<option value="UKG">K3 (UKG)</option>
+												<option value="I">K4 (I)</option>
+												<option value="II">K5 (II)</option>
 												<option value="III">III</option>
 												<option value="IV">IV</option>
 												<option value="V">V</option>
@@ -315,6 +319,15 @@
 												<option value="Science">Science</option>
 												<option value="Social Studies">Social Studies</option>
 												<option value="Arts, Crafts & Vocational">Arts, Crafts & Vocational</option>
+												<option disabled>-----------------------------------------</option>
+												<option value="Physical Quotient">Physical Quotient</option>
+												<option value="Thinking Quotient">Thinking Quotient</option>
+												<option value="Social Quotient">Social Quotient</option>
+												<option value="Emotional Quotient">Emotional Quotient</option>
+												<!-- <option value="Intellectual Quotient">Intellectual Quotient</option> -->
+											</select>
+											<select onchange="dl_list(this.value, 'subject')" class="form-select teacontrol" aria-label="Default select" name="dl_subject_select_skills" id="dl_subject_skills" required="true" readonly>
+												<option selected>Select Subject</option>
 												<option disabled>-----------------------------------------</option>
 												<option value="Physical Quotient">Physical Quotient</option>
 												<option value="Thinking Quotient">Thinking Quotient</option>
@@ -442,7 +455,7 @@
 			<table id="studentdata" class="studata table table-hover">
 				<thead>
 					<tr style="background-color: #E8E8E8; height: 50px;">
-							<!-- <th style="vertical-align: middle; text-align: center; width: 5%;"></th> -->
+							<th style="vertical-align: middle; text-align: center; width: 5%;"><input type="checkbox" name="rows" value="" style="height: 18px; width: 18px;"></th>
 							<th style="vertical-align: middle; text-align: center; width: 20%; border-left: 1px solid black;">Name</th>
 							<th style="vertical-align: middle; text-align: center; border-left: 1px solid lightgrey; width: 15%;">Roll Number</th>
 							<th style="vertical-align: middle; text-align: center; border-left: 1px solid lightgrey; width: 10%;">Grade</th>
@@ -469,9 +482,10 @@
 				<?php if($_SESSION['T_GRADE'] == "All"):?>
 
 				<tr style="text-align: center; border-bottom: 1px solid lightgrey;">
-					<!-- <td style="vertical-align: middle; border-left: 1px solid lightgrey;">
-						<input type="checkbox" name="rows" value="" style="height: 18px; width: 18px;" onchange="rowsel()">
-					</td> -->
+					<td style="vertical-align: middle; border-left: 1px solid lightgrey;">
+																			<!-- onchange="rowsel()" -->
+						<input type="checkbox" name="rows" value="" style="height: 18px; width: 18px;">
+					</td>
 					<td style="vertical-align: middle; border-left: 1px solid black;"><b><?php echo $s_row['name']; ?></b></td>
 					<td style="vertical-align: middle;"><b><?php echo $row['roll_no']; ?></b></td>
 					<td style="vertical-align: middle;"><?php echo $row['grade']; ?></td>
@@ -483,9 +497,10 @@
 				<?php elseif($row['grade'] == $_SESSION['T_GRADE']):?>
 
 				<tr style="text-align: center; border-bottom: 1px solid lightgrey;">
-					<!-- <td style="vertical-align: middle; border-left: 1px solid lightgrey;">
-						<input type="checkbox" name="rows" value="" style="height: 18px; width: 18px;" onchange="rowsel()">
-					</td> -->
+					<td style="vertical-align: middle; border-left: 1px solid lightgrey;"> 
+																		<!-- onchange="rowsel()" -->
+						<input type="checkbox" name="rows" value="" style="height: 18px; width: 18px;">
+					</td>
 					<td style="vertical-align: middle; border-left: 1px solid black;"><b><?php echo $s_row['name']; ?></b></td>
 					<td style="vertical-align: middle;"><b><?php echo $row['roll_no']; ?></b></td>
 					<td style="vertical-align: middle;"><?php echo $row['grade']; ?></td>
@@ -501,7 +516,7 @@
 			</table>
 		</div>
 
-		<hr style="width: 100%; margin-top: 20px; margin-bottom: 20px; border-top: 2px solid black;">
+		<hr style="width: 100%; margin-top: 20px; margin-bottom: 200px; border-top: 2px solid black;">
 
 			<div id="stu_modal" class="modal fade">
 			  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">

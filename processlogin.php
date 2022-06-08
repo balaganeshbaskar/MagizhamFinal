@@ -34,72 +34,148 @@ if (isset($_POST['btnlogin']))
     if ($result)
     {
       $data = $result->fetch_assoc();
-      $passhash = $data['pass']; 
+      $attempts_left = $data['attempts']; 
 
-      // echo "<br>Hashed: ".$passhash;
-      // echo "<br>password: ".$pass;
-
-      if (!password_verify($pass, $passhash))
+      if($attempts_left > 0) // If there are attempts left!!
       {
-        ?>    
-          <script type="text/javascript">
-            alert("Wrong Password retry!");
-            window.location = "login.php";
-          </script>
-        <?php
-      }
-      else
-      {
-          $sss_id = $data['s_id'];
 
-          if($data['type'] == 'teacher')
+        $passhash = $data['pass']; 
+
+        // echo "<br>Hashed: ".$passhash;
+        // echo "<br>password: ".$pass;
+
+        if (!password_verify($pass, $passhash))
+        {
+
+          $new_attempts_left = $attempts_left - 1;
+
+          $mysqli->query("UPDATE credentials SET attempts='$new_attempts_left' where uname='$uname'") or die($mysqli->error());
+
+          if($new_attempts_left == 3)
           {
-              $for_name = $mysqli->query("SELECT * FROM teachers where s_id='$sss_id'") or die($mysqli->error);  
-              $datass = $for_name->fetch_assoc();
-    
-              $t_fname = $datass['t_fname']; 
-              $t_grade = $datass['t_grade']; 
-              $t_subject = $datass['t_subject'];
 
-              $_SESSION['T_GRADE'] = $t_grade; 
-              $_SESSION['T_SUBJECT'] = $t_subject;
-              $_SESSION['USER_NAME'] = $t_fname; 
+            // $mysqli->query("UPDATE credentials SET attempts='$new_attempts_left' where uname='$uname'") or die($mysqli->error());
+
+            ?>
+              <script type="text/javascript">
+                alert("Wrong Password retry! Only 3 attempts left!");
+                window.location = "login.php";
+              </script>
+            <?php
+          }
+          else if($new_attempts_left == 2)
+          {
+            ?>
+              <script type="text/javascript">
+                alert("Wrong Password retry! Only 2 attempts left!");
+                window.location = "login.php";
+              </script>
+            <?php
+          }
+          else if($new_attempts_left == 1)
+          {
+            ?>
+              <script type="text/javascript">
+                alert("Wrong Password retry! Only 1 attempt left!");
+                window.location = "login.php";
+              </script>
+            <?php
+          }
+          else if($new_attempts_left == 0)
+          {
+            ?>
+              <script type="text/javascript">
+                alert("Wrong Password! No attempts left! Please Contact Admin and Reset your password!");
+                window.location = "login.php";
+              </script>
+            <?php
           }
           else
           {
-              $_SESSION['USER_NAME'] = $data['uname']; 
+            $temp_attempts_left = 0;
+            $mysqli->query("UPDATE credentials SET attempts='$temp_attempts_left' where uname='$uname'") or die($mysqli->error());
+            ?>
+              <script type="text/javascript">
+                alert("Wrong Password! Please Contact Admin and Reset your password!");
+                window.location = "login.php";
+              </script>
+            <?php
           }
-          
-          $_SESSION['MEMBER_ID']  = $data['s_id']; 
-          $_SESSION['USER_TYPE'] = $data['type'];
-          
 
-          if( $data['type'] == 'teacher')
-          {
-              ?>    <script type="text/javascript">
-                //then it will be redirected to index.php
-                window.location = "adminpanel.php";
-                  </script>
-              <?php 
-          }       
+        }
+        else
+        {
+            $sss_id = $data['s_id'];
 
-          else if( $data['type'] == 'student')
-          {
-              ?> 
-              <script type="text/javascript">
-                window.location = "studentprofile.php";
-              </script> 
-              <?php
-          }  
+            if($data['type'] == 'teacher')
+            {
+                $for_name = $mysqli->query("SELECT * FROM teachers where s_id='$sss_id'") or die($mysqli->error);  
+                $datass = $for_name->fetch_assoc();
+      
+                $t_fname = $datass['t_fname']; 
+                $t_grade = $datass['t_grade']; 
+                $t_subject = $datass['t_subject'];
 
-          else if( $data['type'] == 'parent')
-          {
-              ?> 
-              <script type="text/javascript">
-                window.location = "studentprofile.php";
-              </script> 
-              <?php
-          } 
+                $_SESSION['T_GRADE'] = $t_grade; 
+                $_SESSION['T_SUBJECT'] = $t_subject;
+                $_SESSION['USER_NAME'] = $t_fname;
+            }
+            else
+            {
+                $_SESSION['USER_NAME'] = $data['uname']; 
+            }
+            
+            $_SESSION['MEMBER_ID']  = $data['s_id']; 
+            $_SESSION['USER_TYPE'] = $data['type'];
+            
+
+
+            if( $data['type'] == 'admin')
+            {
+                ?>    <script type="text/javascript">
+                  //then it will be redirected to index.php
+                  window.location = "adminaccess.php";
+                    </script>
+                <?php 
+            }  
+
+            else if( $data['type'] == 'teacher')
+            {
+                ?>    <script type="text/javascript">
+                  //then it will be redirected to index.php
+                  window.location = "adminpanel.php";
+                    </script>
+                <?php 
+            }       
+
+            else if( $data['type'] == 'student')
+            {
+                ?> 
+                <script type="text/javascript">
+                  window.location = "studentprofile.php";
+                </script> 
+                <?php
+            }  
+
+            else if( $data['type'] == 'parent')
+            {
+                ?> 
+                <script type="text/javascript">
+                  window.location = "studentprofile.php";
+                </script> 
+                <?php
+            } 
+        }
+      }
+      else // if no attempts left !
+      {
+
+        ?>
+          <script type="text/javascript">
+            alert("0 remaining Attempts left! Please Contact Admin and Reset your password !!");
+            window.location = "login.php";
+          </script>
+        <?php
       }
 
     } 

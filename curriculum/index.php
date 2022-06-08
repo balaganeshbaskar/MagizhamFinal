@@ -29,10 +29,9 @@
 	<!-- <a href="https://wa.me/919597989150?text=Enter%20Student%20Name%20Here%3A%0AEnter%20Parent%27s%20Name%3A%0AEnter%20Student%27s%20Grade%3A%0AEnter%20Contact%20Number%3A%0AEnter%20Email%20ID%20(optional)%3A	" class="float" target="_blank">
 		<i class="fa fa-whatsapp my-float"></i>
 	</a> -->
-	<a href="https://wa.me/919597989150?text=Hello!%0AI%20would%20like%20to%20know%20more%20about%20your%20school%2C%20Please%20contact%20me.%0AThank%20you!" class="float" target="_blank">
+	<a href="https://wa.me/919944563085?text=Hello!%0AI%20would%20like%20to%20know%20more%20about%20your%20school%2C%20Please%20contact%20me.%0AThank%20you!" class="float" target="_blank">
 		<i class="fa fa-whatsapp my-float"></i>
 	</a>
-
 
 
     <!-- MOLC Brand Image starts here -->
@@ -90,13 +89,15 @@
 
 		<div class="row">
 			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">				
-				<div style="position: relative; top: 50%;-ms-transform: translateY(-50%); transform: translateY(-50%); padding: 20px;"><img src="images/temp-image.jpg" class="contact-us-image">		
+				<div style="position: relative; top: 50%;-ms-transform: translateY(-50%); transform: translateY(-50%); padding: 20px;">
+					<img src="css/images/image_1.jpg" class="contact-us-image">		
 				</div>
 			</div>
 			<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
 				<div> 
 					<div class="card-custom-1" style="margin-left: 20px; margin-right: 20px; padding-bottom: 10px;">
-						<p>At Magizham we follow Montessori Education for pre-primary classes. <br><br> The purpose of education should be in such a way that it is applied in every step of life. Education should not be restricted to books alone but must be extended to the outer world.</p>
+						<p>At Magizham we follow Montessori Education from  pre-primary to Grade 2.. <br><br>“Education is a natural process carried out by the child and is not acquired by listening to words but by experiences in the environment.”	
+						- Dr.  Maria Montessori</p>
 					</div>					
 				</div>
 			</div>
@@ -104,13 +105,14 @@
 		<br>
 		<div class="row">
 			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">				
-				<div style="position: relative; top: 50%;-ms-transform: translateY(-50%); transform: translateY(-50%); padding: 20px;"><img src="images/temp-image.jpg" class="contact-us-image">		
+				<div style="position: relative; top: 50%;-ms-transform: translateY(-50%); transform: translateY(-50%); padding: 20px;"> 
+					<img src="css/images/image_2.jpg"  class="contact-us-image-1">		
 				</div>
 			</div>
 			<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
 				<div> 
 					<div class="card-custom-1" style="margin-left: 20px; margin-right: 20px; padding-bottom: 10px;">
-						<p>NIOS – OBE syllabus is followed from classes 1to 8.<br><br>Students can choose CBSE or State Board syllabus for 10th and  12th Curriculum.</p>
+						<p>NIOS – OBE syllabus is followed from classes 3 to 10.<br><br>Students can choose CBSE or State Board syllabus for 10th and  12th Curriculum.</p>
 					</div>					
 				</div>
 			</div>
@@ -128,11 +130,14 @@
 				 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 				 	<div class="prefix-content">
 				 		<p class="prefix-content-title">
-				 			Ages 3 to 6 Years <br> (Pre-primary)
+				 			Ages 3 to 8 Years <br> (Pre-primary to Grade 2)
 				 		</p>
 					 	<div class="prefix-content-image">
-					 		<div style="border: 2px solid black; height: 330px;">
-					 			<p style="margin-top: 150px;">Image Here</p>
+					 		<div>
+					 			<!-- <p style="margin-top: 150px;">Image Here</p> -->
+								 <!-- <div style="position: relative; top: 50%;-ms-transform: translateY(-50%); transform: translateY(-50%); margin-top: 20px;  margin-bottom: 20px;">		 -->
+									<img src="images/1_curriculum.jpg" class="curriculum-us-image">	
+								<!-- </div>	 -->
 					 		</div>
 					 	</div>									
 					</div>
@@ -148,7 +153,7 @@
 						
 						<li>Children develop their potential as they step out into the world as engaged, competent, responsible, and respectful citizens. </li>
 
-						<li>Students are part of a close, caring community. The multi-age classroom—typically spanning 3 years—re-creates a family structure. Older students enjoy stature as mentors and role models; younger children feel supported and gain confidence about the challenges ahead. Teachers model respect, loving kindness, and a belief in peaceful conflict resolution.</li>
+						<li>Students are part of a close, caring community. The multi-age classroom—typically spanning 3 years—re-creates a family structure. Older students enjoy stature as mentors and role models; younger children feel supported and gain confidence about the challenges ahead. Teachers model respect, loving kindness and a belief in peaceful conflict resolution.</li>
 
 						<li>We understand that internal satisfaction drives the child’s curiosity and interest and results in joyous learning that is sustainable over a lifetime.</li>
 				 			
@@ -165,8 +170,8 @@
 				<div class="col-lg-4 col-md-4 col-xs-12 col-sm-12">
 					<ul class="learning-areas-point-one" style="position: relative; top: 50%;-ms-transform: translateY(-50%); transform: translateY(-50%);">
 						<li>Exercise and Practical Life (EPL)</li>
-						<li>Language</li>
-						<li>Exploration and science concepts</li>
+						<li>Language - English, Tamil</li>
+						<li>Exploration to science concepts</li>
 					</ul>
 				</div>
 				<div class="col-lg-4 col-md-4 col-xs-12 col-sm-12">
@@ -188,17 +193,18 @@
 				 <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 				 	<div class="prefix-content">
 				 		<p class="prefix-content-title">
-				 			Ages 7 to 16 Years <br> (NIOS Syllabus)
+						 Ages 9 to 16 Years<br> (Grade 3 to 10)
 				 		</p>
 					 	<div class="prefix-content-image">
-					 		<div style="border: 2px solid black; height: 330px;">
-					 			<p style="margin-top: 150px;">Image Here</p>
+					 		<div>
+					 			<!-- <p style="margin-top: 150px;">Image Here</p> -->
+								<img src="images/2_curriculum.jpg" class="curriculum-us-image">
 					 		</div>
 					 	</div>									
 					</div>
 				 </div>
 				 <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-				 	<div class="card-custom" style="padding: 10px;">
+				 	<div class="card-custom">
 				 		<p>
 			 				&emsp; NIOS (National Institute of Open Schooling) is an institution and a recognised board of education in India which is run by the National Open School Society under the Ministry of HRD, Government of India. This Board was known as National Open School (NOS) earlier. The key purpose of NIOS is to provide primary, secondary, senior secondary, vocational, and life skill education to a diverse group of learners which include differently or specially enabled students.
 							<br><br>
@@ -252,9 +258,9 @@
 								Beauty Therapy
 							</p>
 						</div>				
-						<!-- <div style="text-align: center;">
-							<img src="images/temp-image.jpg" class="vocalisation-image">									
-						</div>	 -->
+						<div style="text-align: center;">
+							<img src="images/beauty.jpg" class="vocalisation-image">									
+						</div>	
 					</div>
 					<div class="col-lg-4 col-sm-12 col-md-4 col-xs-12">
 						<div class="beauty-and-wellness-subtitle">
@@ -262,9 +268,9 @@
 								Hair Care and Styling
 							</p>
 						</div>				
-						<!-- <div style="text-align: center;">
-							<img src="images/temp-image.jpg" class="vocalisation-image">									
-						</div>	 -->
+						<div style="text-align: center;">
+							<img src="images/hairstyle.jpg" class="vocalisation-image">									
+						</div>	
 					</div>
 					<div class="col-lg-4 col-sm-12 col-md-4 col-xs-12">
 						<div class="beauty-and-wellness-subtitle">
@@ -272,16 +278,16 @@
 								Hand and Foot Care
 							</p>
 						</div>				
-						<!-- <div style="text-align: center;">
-							<img src="images/temp-image.jpg" class="vocalisation-image">									
-						</div>	 -->
+						<div style="text-align: center;">
+							<img src="images/handfoot.jpg" class="vocalisation-image">									
+						</div>	
 					</div>
 				</div>
-				<div class="row" style="margin-top: 30px;">
+				<div class="row" style="margin-top: 100px;">
 					<div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
 						<div class="beauty-and-wellness-title">
 							<p>
-								Agriculture and Animal Industry
+								Agriculture and Animal Husbandry
 							</p>
 						</div>
 					</div>
@@ -293,19 +299,19 @@
 								Bee Keeping
 							</p>
 						</div>				
-						<!-- <div style="text-align: center;">
-							<img src="images/temp-image.jpg" class="vocalisation-image">									
-						</div>	 -->
+						<div style="text-align: center;">
+							<img src="images/bee.jpg" class="vocalisation-image">									
+						</div>	
 					</div>
 					<div class="col-lg-4 col-sm-12 col-md-4 col-xs-12">
 						<div class="beauty-and-wellness-subtitle">
 							<p>
-								Padding Farming
+								Paddy Farming
 							</p>
 						</div>				
-						<!-- <div style="text-align: center;">
-							<img src="images/temp-image.jpg" class="vocalisation-image">									
-						</div>	 -->
+						<div style="text-align: center;">
+							<img src="images/paddy.jpg" class="vocalisation-image">									
+						</div>	
 					</div>
 					<div class="col-lg-4 col-sm-12 col-md-4 col-xs-12">
 						<div class="beauty-and-wellness-subtitle">
@@ -313,9 +319,9 @@
 								Poultry Farming
 							</p>
 						</div>				
-						<!-- <div style="text-align: center;">
-							<img src="images/temp-image.jpg" class="vocalisation-image">									
-						</div>	 -->
+						<div style="text-align: center;">
+							<img src="images/poultry.jpg" class="vocalisation-image">									
+						</div>	
 					</div>
 				</div>
 			</div>

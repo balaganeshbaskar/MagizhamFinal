@@ -18,6 +18,7 @@
 ?>
 <body>
   <!-- <h3 style="text-align: center; color: red;">Note: Based on teacher grade, only show those students in their admin panel</h3> -->
+  <h3 style="text-align: center; color: red;">Note: Continue with full details button on admin panel</h3>
   <h3 style="text-align: center; color: red;">Note: If required, add deadline history, upcoming modal for students.</h3>
   <h3 style="text-align: center; color: red;">Note: Get deadline time from internet to avoid malpractise.</h3>
   <h3 style="text-align: center; color: red;">Note: If needed, save all students data before promoting to check previous year data.</h3>
@@ -48,8 +49,8 @@
     </form>
     
     <!-- <div class="pass-link">
-      <a href="" >Lost your password?</a>
-    </div>  --> 
+      <a href="" >Forgot password?</a>
+    </div>   -->
   </div>
   
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

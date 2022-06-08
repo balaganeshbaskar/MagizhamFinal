@@ -26,15 +26,15 @@
    <!-- <h3 style="text-align: center; color: red;">Note: If required, add deadline history, upcoming modal for students.</h3>
    <h3 style="text-align: center; color: red;">Note: Create signup page for teachers using unique teacher id.</h3> -->
    <?php if(isset($_SESSION['message'])): ?>
-    <div style="margin-top: 20px" class="alert alert-<?=$_SESSION['msg_type']?>">
+    <div style="margin-top: 20px; margin-left: 5px; width:50%;" class="alert alert-<?=$_SESSION['msg_type']?>">
 
       <?php 
-        echo $_SESSION['message'];
+        echo "INFORMATION: ".$_SESSION['message'];
         unset($_SESSION['message']);	
       ?>
       
     </div>
-  <?php endif; ?>	
+  <?php endif; ?>
   
   <div class="bg-image" style="background-image: url('images/bg.jpg');"></div>
 
@@ -49,10 +49,11 @@
       
       <select class="form-control" name="t_grade" required="true" style="margin-bottom:15px; text-align:center; width: 90%; margin-left: auto; margin-right: auto;">
         <option selected>Select Grade</option>
-        <option value="LKG">LKG</option>
-        <option value="UKG">UKG</option>
-        <option value="I">I</option>
-        <option value="II">II</option>
+        <option value="PREKG">K1 (Pre-KG)</option>
+        <option value="LKG">K2 (LKG)</option>
+        <option value="UKG">K3 (UKG)</option>
+        <option value="I">K4 (I)</option>
+        <option value="II">K5 (II)</option>
         <option value="III">III</option>
         <option value="IV">IV</option>
         <option value="V">V</option>
@@ -77,8 +78,9 @@
         <option value="Science">Science</option>
         <option value="Social Studies">Social Studies</option>
         <option value="Arts, Crafts & Vocational">Arts, Crafts & Vocational</option>
-        <!-- <option disabled>-----------------------------------------</option>
-        <option value="Physical Quotient">Physical Quotient</option>
+        <option disabled>-----------------------------------------</option>
+        <option value="Life Skills">Life Skills</option>
+        <!-- <option value="Physical Quotient">Physical Quotient</option>
         <option value="Thinking Quotient">Thinking Quotient</option>
         <option value="Social Quotient">Social Quotient</option>
         <option value="Emotional Quotient">Emotional Quotient</option> -->
